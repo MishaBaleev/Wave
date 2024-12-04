@@ -1,0 +1,163 @@
+@import "../../../mixin.scss";
+
+.examples{
+    width: 100%;
+    height: 75%;
+    @include flexContainerCenterWrap();
+    align-items: flex-start;
+    align-content: flex-start;
+
+    animation: forwards .3s showCMP;
+    @keyframes showCMP {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    &.unactive{animation: forwards .3s hideCMP;};
+    @keyframes hideCMP {
+        from{opacity: 1;}
+        to{opacity: 0;}
+    }
+
+    .swiper{
+        width: calc(100% - 160px);
+        height: 81%;
+        background-color: #6F85AF;
+        border-radius: 6px;
+        .swiper-wrapper{
+            width: 100%;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            color: whitesmoke;
+        }
+        .swiper_item{
+            .card{
+                height: 100%;
+                @include flexContainerCenterWrap();
+                align-items: flex-start;
+                .index{
+                    width: 100%;
+                    .frame{
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px 0 0 10px;
+                        border: 2px solid whitesmoke;
+                        border-radius: 30px;
+                        @include flexContainerCenterWrap();
+                        p{
+                            @include bText(25, 10);
+                            margin: 0;
+                        }
+                    }
+                }
+                .section_1{
+                    width: 40%;
+                    height: calc(100% - 54px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    .description{
+                        margin: 0;
+                        @include text(35, 15);
+                    }
+                    .price{
+                        @include flexContainerCenterWrap();
+                        margin-bottom: 40px;
+                        img{
+                            @include adaptiv-height(100);
+                        }
+                        p{
+                            @include text(40, 20);
+                            margin: 0 0 0 40px;
+                        }
+                    }
+                }
+                .section_2{
+                    width: 50%;
+                    height: calc(100% - 108px);
+                    @include flexContainerCenterWrap();
+                    align-content: space-around;
+                    justify-content: space-evenly;
+                    .part{
+                        width: 28%;
+                        padding: 10px 0;
+                        background-color: #4B7DB0;
+                        border: 2px solid whitesmoke;
+                        border-radius: 6px;
+                        transition-duration: .1s;
+                        @include flexContainerCenterWrap();
+                        img{
+                            @include adaptiv-height(140);
+                            aspect-ratio: 1/1;
+                            object-fit: cover;
+                            border-radius: 6px;
+                        }
+                        p{
+                            width: 100%;
+                            @include bText(23, 13);
+                            text-align: center;
+                            margin: 10px 0 0 0;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                            background-color: #9FAECB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px){
+    .examples{
+        .swiper{
+            .swiper_item{
+                .card{
+                    .section_2{
+                        .part{
+                            p{
+                                @include text(18, 13)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-height: 840px){
+    .examples{
+        .swiper{
+            .swiper_item{
+                .card{
+                    .section_1{
+                        width: 35%;
+                        .description{
+                            @include text(30,15);
+                        };
+                        .price{
+                            p{
+                                @include text(30, 20)
+                            }
+                        }
+                    }
+                    .section_2{
+                        width: 55%;
+                        align-items: stretch;
+                        .part{
+                            width: 18%;
+                            box-sizing: border-box;
+                            img{
+                                @include adaptiv-height(130);
+                            }
+                            p{
+                                @include text(18, 13);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

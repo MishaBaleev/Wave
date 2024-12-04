@@ -1,0 +1,59 @@
+@import "../mixin.scss";
+
+.modal{
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    background-color: #4B7DB0;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    .close{
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        border: none;
+        border-radius: 3px;
+        padding: 0;
+        @include flexContainerCenterWrap();
+        transition-duration: .1s;
+        &:hover{cursor: pointer;}
+        &::after, &::before{
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: whitesmoke;
+        }
+        &::after{
+            rotate: 45deg;
+        }
+        &::before{
+            rotate: -45deg;
+        }
+    }
+    .title{
+        width: 100%;
+        height: 40px;
+        background-color: #365b7f;
+        @include flexContainerCenterWrap();
+        p{
+            @include text(22, 10);
+            margin: 0
+        }
+    }
+    .message{
+        width: calc(100% - 20px);
+        padding: 10px;
+        p{
+            @include text(20, 8);
+            margin: 0
+        }
+    }
+}

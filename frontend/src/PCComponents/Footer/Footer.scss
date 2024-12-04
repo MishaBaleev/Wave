@@ -1,0 +1,15 @@
+@import "../mixin.scss";
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #4B7DB0;
+    padding: 10px 0;
+    p{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        @include text(17, 17);
+    }
+}

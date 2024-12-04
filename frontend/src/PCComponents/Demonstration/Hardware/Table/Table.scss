@@ -1,0 +1,56 @@
+@import "../../../mixin.scss";
+
+.table{
+    height: calc(100% - 50px);
+    width: 80%;
+    overflow-y: scroll;
+    @include flexContainerCenterWrap();
+    align-content: flex-start;
+    &::-webkit-scrollbar{
+        background-color: transparent;
+        width: 7px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #B9CAEA;
+        border-radius: 3.5px;
+    }
+    .table_inner{
+        border: none;
+        border-spacing: 0;
+        width: 98%;
+        background-color: #9FAECB;
+        th{
+            border: 1px solid whitesmoke;
+        }
+        thead{
+            width: 100%;
+            tr{
+                th{
+                    position: sticky;
+                    top: 0;
+                    padding: 5px 20px;
+                    @include bText(23, 10);
+                    margin: 0;
+                    text-align: center;
+                    background-color: #9FAECB;
+                    color: #365b7f;
+                    white-space: nowrap;
+                }
+            }
+        }
+        tbody{
+            tr {
+                &:nth-child(2n-1) th{
+                    background-color: #B9CAEA; 
+                }
+                th{
+                    padding: 10px 10px;
+                    @include text(20, 10);
+                    margin: 0;
+                    color: #365b7f;
+                    &:first-child{cursor: pointer;}
+                }
+            }
+        } 
+    }
+}

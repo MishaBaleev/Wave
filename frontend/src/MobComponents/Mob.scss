@@ -1,0 +1,30 @@
+@import "./mixin.scss";
+
+.mob{
+    width: 100vw;
+    height: 100dvh;
+    @include flexContainerCenterWrap();
+
+    .background{
+        background-color: #4B7DB0;
+    }
+    .window{
+        width: calc(90% - 20px);
+        background-color: #4B7DB0;
+        border: 2px solid whitesmoke;
+        border-radius: 6px;
+        padding: 10px 10px;
+        p{margin: 0;};
+        .title{
+            @include bText(30);
+            width: 100%;
+            text-align: center;
+        }
+        .text{
+            margin-top: 10px;
+            @include text(20);
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+[
+  {
+    "name": "S500 с pcb",
+    "material": "Нейлон+карбон",
+    "flight": "7,2",
+    "distanceMotors": "520",
+    "sum_motors": "4",
+    "weight": 0.42,
+    "price": "5830",
+    "link": "https:\/\/rccopter.ru\/product\/rama-kvadrokoptera-s500-s-pcb"
+  },
+  {
+    "name": "S500",
+    "material": "Нейлон+карбон",
+    "flight": "-",
+    "distanceMotors": "520",
+    "sum_motors": "4",
+    "weight": 0.404,
+    "price": "4950",
+    "link": "https:\/\/rccopter.ru\/product\/rama-kvadrokoptera-s500"
+  },
+  {
+    "name": "Holybro x500 fpv frame v2",
+    "material": "Нейлон+карбон",
+    "flight": "5,2",
+    "distanceMotors": "500",
+    "sum_motors": "4",
+    "weight": 0.61,
+    "price": "20460",
+    "link": "https:\/\/rccopter.ru\/product\/rama-kvadrokoptera-holybro-x500-fpv-frame"
+  },
+  {
+    "name": "Tarot 650",
+    "material": "Карбон 3к",
+    "flight": "20",
+    "distanceMotors": "650",
+    "sum_motors": "4",
+    "weight": 0.476,
+    "price": "15400",
+    "link": "https:\/\/rccopter.ru\/product\/skladnaya-karbonovaya-rama-tarot-650"
+  },
+  {
+    "name": "Tarot 650 sport",
+    "material": "Карбон 3к",
+    "flight": "9,3",
+    "distanceMotors": "600",
+    "sum_motors": "4",
+    "weight": 1.02,
+    "price": "21780",
+    "link": "https:\/\/rccopter.ru\/product\/skladnaya-karbonovaya-rama-tarot-650-sport"
+  },
+  {
+    "name": "Tarot 680 pro",
+    "material": "Карбон 3к",
+    "flight": "27",
+    "distanceMotors": "690",
+    "sum_motors": "6",
+    "weight": 0.81,
+    "price": "17600",
+    "link": "https:\/\/rccopter.ru\/product\/skladnaya-karbonovaya-rama-tarot-680"
+  },
+  {
+    "name": "Tarot 690s",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "690",
+    "sum_motors": "6",
+    "weight": 0.6,
+    "price": "16500",
+    "link": "https:\/\/rccopter.ru\/product\/rama-dlya-geksakoptera-tarot-690s"
+  },
+  {
+    "name": "Tarot xs690",
+    "material": "Карбон",
+    "flight": "24",
+    "distanceMotors": "690",
+    "sum_motors": "4",
+    "weight": 0.562,
+    "price": "22770",
+    "link": "https:\/\/rccopter.ru\/product\/skladnaya-karbonovaya-rama-kvadrokopteratarot-xs690"
+  },
+  {
+    "name": " tarot x4",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "960",
+    "sum_motors": "4",
+    "weight": 1.9,
+    "price": "46640",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-kvadrokoptera-tarot-x4-skladnaya"
+  },
+  {
+    "name": "Tarot t810 tl810a",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "810",
+    "sum_motors": "6",
+    "weight": 1.02,
+    "price": "33000",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-geksakoptera-tarot-t810-tl810a"
+  },
+  {
+    "name": "Tarot t960 fyt960",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "960",
+    "sum_motors": "6",
+    "weight": 1.05,
+    "price": "48400",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-geksakoptera-tarot-t960-fyt960"
+  },
+  {
+    "name": "Tarot tl4q770",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "770",
+    "sum_motors": "4",
+    "weight": 1.7,
+    "price": "41110",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-kvadrokoptera-tarot-tl4q770-bokovoe-skladyvanie"
+  },
+  {
+    "name": "Tarot 650",
+    "material": "Углерода волокно",
+    "flight": "-",
+    "distanceMotors": "563",
+    "sum_motors": "4",
+    "weight": 1.4,
+    "price": "160386",
+    "link": "https:\/\/aliexpress.ru\/item\/1005002351614665.html?spm=a2g2w.detail.rcmdprod.8.2d603cc4Lotsxh&mixer_rcmd_bucket_id=UnknownMixerAbId&pdp_trigger_item_id=0_32956571092&ru_algo_pv_id=76a91b-40a3c7-391ef5-17ee5b-1710446400&scenario=pcDetailBottomMoreThisSeller&sku_id=12000020241475588&traffic_source=recommendation&type_rcmd=core"
+  },
+  {
+    "name": "Tarot 650",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "280",
+    "sum_motors": "4",
+    "weight": 0.143,
+    "price": "5170",
+    "link": "https:\/\/rccopter.ru\/product\/rama-gonochnogo-kvadrokoptera-tarot-280-h"
+  },
+  {
+    "name": " f450",
+    "material": "Пластик",
+    "flight": "-",
+    "distanceMotors": "450",
+    "sum_motors": "4",
+    "weight": 0.282,
+    "price": "5500",
+    "link": "https:\/\/rccopter.ru\/product\/rama-dji-f450-na-kvadrokopter"
+  },
+  {
+    "name": "H250",
+    "material": "Карбон",
+    "flight": "-",
+    "distanceMotors": "250",
+    "sum_motors": "4",
+    "weight": 0.156,
+    "price": "2800",
+    "link": "https:\/\/rccopter.ru\/product\/rama-gonochnogo-kvadrokoptera-h250-carbon"
+  },
+  {
+    "name": "Dl265",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "265",
+    "sum_motors": "4",
+    "weight": 0.156,
+    "price": "4100",
+    "link": "https:\/\/rccopter.ru\/product\/rama-gonochnogo-kvadrokoptera-dl265"
+  },
+  {
+    "name": "Qav280 v2",
+    "material": "Пластик, карбон",
+    "flight": "-",
+    "distanceMotors": "280",
+    "sum_motors": "4",
+    "weight": 0.132,
+    "price": "3200",
+    "link": "https:\/\/rccopter.ru\/product\/rama-gonochnogo-kvadrokoptera-qav280-v2"
+  },
+  {
+    "name": " hmf q280",
+    "material": "Стекловолокно, пластик",
+    "flight": "-",
+    "distanceMotors": "280",
+    "sum_motors": "4",
+    "weight": 0.132,
+    "price": "2500",
+    "link": "https:\/\/rccopter.ru\/product\/rama-gonochnogo-kvadrokoptera-hmf-q280"
+  },
+  {
+    "name": "Hmf sl300",
+    "material": "Пластик, карбон",
+    "flight": "-",
+    "distanceMotors": "300",
+    "sum_motors": "4",
+    "weight": 0.24,
+    "price": "6300",
+    "link": "https:\/\/rccopter.ru\/product\/rama-gonochnogo-kvadrokoptera-hmf-sl300-so-izmenyaemym-uglom"
+  },
+  {
+    "name": "Tarot tl4q770",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "770",
+    "sum_motors": "4",
+    "weight": 1.7,
+    "price": "44110",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-kvadrokoptera-tarot-tl4q770-bokovoe-skladyvanie"
+  },
+  {
+    "name": "Карбоновая рама октокоптера ",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "1050",
+    "sum_motors": "8",
+    "weight": 1.7,
+    "price": "41580",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-oktokoptera-tarot-x8-lite-skladnaya"
+  },
+  {
+    "name": "Tarot x8 pro складная",
+    "material": "Карбон 3к",
+    "flight": "-",
+    "distanceMotors": "1125",
+    "sum_motors": "8",
+    "weight": 3.42,
+    "price": "79420",
+    "link": "https:\/\/rccopter.ru\/product\/karbonovaya-rama-oktokoptera-tarot-x8-pro-skladnaya"
+  }
+]

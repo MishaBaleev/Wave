@@ -1,0 +1,72 @@
+@import "../../mixin.scss";
+
+.hardware{
+    width: 100%;
+    height: calc(100% - 100px);
+    box-sizing: border-box;
+    padding-top: 20px;
+    @include flexContainerCenterWrap();
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    .toggle_buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        position: relative;
+        .item{
+            position: relative;
+            width: 70px;
+            @include flexContainerCenterWrap();
+            align-items: flex-start;
+            .change_mode{
+                @include flexContainerCenterWrap();
+                padding: 0;
+                margin: 0;
+                aspect-ratio: 1/1;
+                @include adaptiv-height(70);
+                background-color: #365b7f;
+                border: 2px solid whitesmoke;
+                border-radius: 6px;
+                transition-duration: .1s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+                img{
+                    height: 90%;
+                    width: 90%;
+                }
+            }
+            p{
+                width: 100%;
+                text-align: center;
+                margin: 5px 0 0 0;
+                @include text(15, 10)
+            }
+            &:not(:first-child){
+                margin-top: 20px;
+            }
+            &.active{
+                &::before{
+                    position: absolute;
+                    right: -10px;
+                    border-radius: 6px;
+                    content: "";
+                    width: 10px;
+                    @include adaptiv-height(70);
+                    background-color: #02d402;
+                }
+            }
+            &.filter{
+                opacity: 0;
+                transition-duration: .4s;
+                &.active_filter{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

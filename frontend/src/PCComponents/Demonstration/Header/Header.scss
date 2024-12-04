@@ -1,0 +1,84 @@
+@import "../../mixin.scss";
+
+.header_demo{
+    height: 100px;
+    padding: 0 40px;
+    @include flexContainerCenterWrap();
+    justify-content: space-between;
+    .logo{
+        @include flexContainerCenterWrap();
+        .icon{
+            @include adaptiv-height(70)
+        }   
+        .back_head{
+            aspect-ratio: 1/1;
+            @include adaptiv-height(60);
+            background-color: transparent;
+            transition-duration: .1s;
+            border: 2px solid whitesmoke;
+            border-radius: 40px;
+            padding: 0;
+            margin-left: 30px;
+            @include flexContainerCenterWrap();
+            img{
+                width: 80%;
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: #9FAECB66;
+            }
+        }
+    }
+    .navigation{
+        width: 75%;
+        @include flexContainerCenterWrap();
+        justify-content: space-between;
+        .nav_item{
+            height: 100px;
+            width: 10%;
+            box-sizing: border-box;
+            transition-duration: .1s;
+            @include flexContainerCenterWrap();
+            img{
+                box-sizing: border-box;
+                @include adaptiv-height(60)
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: #9FAECB66;
+            }
+            &.active{
+                border-bottom: 2px solid whitesmoke;
+            }
+            p{
+                width: 100%;
+                @include text(15, 5);
+                margin: 5px 0 0 0;
+                text-align: center;
+            }
+        }
+        .arrow{
+            @include adaptiv-height(50)
+        }
+    }
+    .constructor_but{
+        @include adaptiv-height(60);
+        padding: 0 30px;
+        @include text(35, 20);
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+        border-radius: 30px;
+        transition-duration: .1s;
+        &:hover{
+            cursor: pointer;
+            background-color: #9FAECB66;
+        }
+    }
+}
+@media(max-width: 1300px){
+    .header_demo{
+        .constructor_but{
+            @include text(25, 20)
+        }
+    }
+}

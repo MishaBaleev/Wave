@@ -1,0 +1,95 @@
+@import "../../../mixin.scss";
+
+.filter_window{
+    z-index: 100;
+    position: absolute;
+    width: 400px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #365b7f;
+    border-radius: 0 6px 6px 6px;
+    padding-bottom: 20px;
+    .topic{
+        position: absolute;
+        background-color: #365b7f;
+        height: 40px;
+        top: -39px;
+        @include flexContainerCenterWrap();
+        padding: 0 30px;
+        border-radius: 6px 6px 0 0;
+        p{
+            @include bText(30, 10);
+        }
+    }
+    .filter_item{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        @include flexContainerCenterWrap();
+        justify-content: space-between;
+        margin-top: 20px;
+        p{
+            @include text(22, 10);
+            margin: 0;
+        }
+        &.checkbox{
+            input{
+                margin: 0;
+                aspect-ratio: 1/1;
+                width: 25px;
+                border-radius: 6px;
+                accent-color: #02d402;
+                &:hover{cursor: pointer;}
+            }
+        }
+        &.range{
+            input[type=range]{
+                margin: 0;
+                border: none;
+                width: 40%;
+                background-color: transparent;
+                -webkit-appearance: none;
+                &:hover{cursor: ew-resize;}
+                &::-webkit-slider-runnable-track{
+                    -webkit-appearance: none;
+                    height: 10px;
+                    border-radius: 5px;
+                    background-color: gray;
+                }
+                &::-webkit-slider-thumb{
+                    -webkit-appearance: none;
+                    background-color: whitesmoke;
+                    width: 10px;
+                    height: 20px;
+                    border-radius: 5px;
+                    margin-top: -5px;
+                }
+            }
+            input[type=number]{
+                margin: 0;
+                border: none;
+                width: 25%;
+                height: 25px;
+                padding: 0;
+                @include text(20, 10);
+                text-align: center;
+                color: #365b7f;
+                &::-webkit-inner-spin-button{opacity: 1;}
+                &:focus{outline: none;}
+            }
+        }
+    }
+    .apply{
+        margin-top: 20px;
+        width: 100%;
+        @include flexContainerCenterWrap();
+        button{
+            padding: 3px 20px;
+            margin: 0;
+            @include text(25, 10);
+            background-color: transparent;
+            border: 2px solid whitesmoke;
+            border-radius: 6px;
+            &:hover{cursor: pointer;}
+        }
+    }
+}

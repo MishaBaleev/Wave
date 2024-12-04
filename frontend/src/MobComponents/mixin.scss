@@ -1,0 +1,23 @@
+@mixin bText($size){
+	font-family: "JetBrains Mono Variable";
+    font-size: calc(#{$size + px});
+	font-weight: 700;
+	color: whitesmoke;
+	text-align: left;
+}
+
+@mixin text($size){
+	font-size: calc(#{$size + px});
+    font-family: "JetBrains Mono Variable";
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: whitesmoke;
+}
+
+@mixin flexContainerCenterWrap(){
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}

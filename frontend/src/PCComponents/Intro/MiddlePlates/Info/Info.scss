@@ -1,0 +1,88 @@
+@import "../../../mixin.scss";
+
+.info{
+    width: 100%;
+    height: 75%;
+    @include flexContainerCenterWrap();
+    align-items: flex-start;
+    align-content: flex-start;
+
+    animation: forwards .3s showCMP;
+    @keyframes showCMP {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+    &.unactive{animation: forwards .3s hideCMP;};
+    @keyframes hideCMP {
+        from{opacity: 1;}
+        to{opacity: 0;}
+    }
+
+    .window{
+        width: calc(100% - 160px);
+        height: 81%;
+        background-color: #6F85AF;
+        border-radius: 6px;
+        .swiper-wrapper{
+            width: 100%;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            color: whitesmoke
+        }
+        .window_item{
+            @include flexContainerCenterWrap();
+            .main_text{
+                text-indent: 40px;
+                @include text(40, 20);
+                width: 90%;
+                text-align: justify;
+                margin: 0;
+            }
+            .demonstration{
+                width: 100%;
+                height: auto;
+                @include flexContainerCenterWrap();
+                img{
+                    width: 85%;
+                    height: auto;
+                }
+            }
+            .all_place{
+                width: 90%;
+                text-indent: 40px;
+                @include text(40, 20);
+                text-align: justify;
+                margin: 0;
+                &.small{
+                    @include text(22, 10);
+                }
+            }
+            &.center{
+                .demonstration{
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media(max-height: 700px){
+    .info{
+        .window{
+            .window_item{
+                .main_text{
+                    @include text(30,20)
+                }
+                .demonstration{
+                    img{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+}

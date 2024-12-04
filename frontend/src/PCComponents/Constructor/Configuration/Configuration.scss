@@ -1,0 +1,120 @@
+@import "../../mixin.scss";
+
+.configuration{
+    width: 30%;
+    height: calc(100% - 20px);
+    background-color: #B9CAEA99;
+    border-radius: 0 6px 0 0;
+
+    .title{
+        width: 100%;
+        height: 60px;
+        @include flexContainerCenterWrap();
+        box-sizing: border-box;
+        border-bottom: 2px solid whitesmoke;
+        p{
+            @include bText(30, 10);
+            margin: 0;
+        }
+    }
+
+    .conf_list{
+        height: calc(100% - 120px);
+        padding: 0;
+        margin: 0;
+        @include flexContainerCenterWrap();
+        align-content: space-around;
+        li{
+            position: relative;
+            background-color: #6F85AF;
+            width: 100%;
+
+            &.step{
+                @include adaptiv-height(150);
+                background-color: transparent;
+                @include flexContainerCenterWrap();
+                img{
+                    height: 90%;
+                }
+            }
+            .hint_conf{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: -1000px;
+                background-color: #B9CAEA;
+                @include flexContainerCenterWrap();
+                p{
+                    @include bText(30, 15);
+                    color: #4B7DB0;
+                }
+                &.active{
+                    animation: showHintConf forwards .3s;
+                }
+                &.unactive{
+                    animation: hideHintConf forwards .3s
+                }
+                @keyframes showHintConf {
+                    from{left: -1000px}
+                    to{left: 0;}
+                }
+                @keyframes hideHintConf {
+                    from{left: 0}
+                    to{left: -1000px}
+                }
+            }
+            .descr{
+                width: calc(100% - 80px);
+                padding: 20px 40px;
+                @include flexContainerCenterWrap();
+                justify-content: space-between;
+                p{
+                    @include text(25, 10);
+                    margin: 0;
+                    &.price{
+                        // width: 50%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .common_price{
+        width: 100%;
+        height: 60px;
+        @include flexContainerCenterWrap();
+        box-sizing: border-box;
+        border-top: 2px solid whitesmoke;
+        p{
+            margin: 0;
+            @include bText(30, 10);
+            &.price{
+                width: 250px;
+                text-align: right;
+            }
+        }
+    }
+}
+@media(max-height: 750px){
+    .configuration{
+        .conf_list{
+            li{
+                &.step{
+                    @include adaptiv-height(120);
+                }
+                .descr{
+                    padding: 10px 20px;
+                    p{
+                        @include text(18, 10)
+                    }
+                }
+            }
+        }
+        .common_price{
+            p{
+                @include bText(20, 10)
+            }
+        }
+    }
+}

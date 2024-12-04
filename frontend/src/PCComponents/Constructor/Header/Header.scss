@@ -1,0 +1,104 @@
+@import "../../mixin.scss";
+
+.header{
+    height: 100px;
+    padding: 0 20px;
+    @include flexContainerCenterWrap();
+    justify-content: space-between;
+    .icon{
+        @include flexContainerCenterWrap();
+        .icon_img{
+            @include adaptiv-height(70)
+        }
+        .back_head{
+            aspect-ratio: 1/1;
+            @include adaptiv-height(60);
+            background-color: transparent;
+            transition-duration: .1s;
+            border: 2px solid whitesmoke;
+            border-radius: 40px;
+            padding: 0;
+            margin-left: 30px;
+            @include flexContainerCenterWrap();
+            img{
+                width: 80%;
+            }
+            &:hover{
+                cursor: pointer;
+                background-color: #9FAECB66;
+            }
+        }
+    }  
+    .navigation{
+        width: 70%;
+        @include flexContainerCenterWrap();
+        justify-content: space-between;
+        .nav_button{
+            position: relative;
+            width: 12%;
+            .nav_item{
+                height: 100px;
+                width: 100%;
+                box-sizing: border-box;
+                transition-duration: .1s;
+                @include flexContainerCenterWrap();
+                img{
+                    box-sizing: border-box;
+                    @include adaptiv-height(60);
+                }
+                &:hover{
+                    cursor: pointer;
+                    background-color: #9FAECB66;
+                }
+                &.active{
+                    border-bottom: 2px solid whitesmoke;
+                }
+                p{
+                    width: 100%;
+                    @include text(15, 5);
+                    margin: 5px 0 0 0;
+                    text-align: center;
+                }
+            }
+            .indicator{
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 15px;
+                height: 15px;
+                border-radius: 7.5px;
+                background-color: red;
+                &.finished{background-color: #02d402;}
+            }
+        }
+        .arrow{
+            @include adaptiv-height(50);
+        }
+    }
+    .reset{
+        button{
+            @include adaptiv-height(60);
+            padding: 0 20px;
+            @include text(20, 8);
+            background-color: transparent;
+            border: 2px solid whitesmoke;
+            border-radius: 30px;
+            transition-duration: .1s;
+            &:hover{
+                cursor: pointer;
+                background-color: #9FAECB66;
+            }
+        }
+    }
+}
+@media(max-width: 1300px){
+    .header{
+        .reset{
+            width: 15%;
+            @include flexContainerCenterWrap();
+            button{
+                &:not(:first-child){margin-top: 10px;}
+            }
+        }
+    }
+}

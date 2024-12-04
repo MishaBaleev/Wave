@@ -1,0 +1,18 @@
+@import "../mixin.scss";
+
+.constructor{
+    width: 100vw;
+    height: 100vh;
+
+    .background{
+        background-color: #4B7DB0;
+    }
+
+    .work_zone{
+        width: 100%;
+        height: calc(100% - 100px);
+        @include flexContainerCenterWrap();
+        justify-content: space-between;
+        align-content: flex-end;
+    }
+}
