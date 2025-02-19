@@ -1,9 +1,15 @@
+import { updateModal } from "../../../../AppSlice";
 import "./Table.scss";
+import { connect } from "react-redux";
 
 const Table = (props) => {
     const goToShop = (index, item) => {
         if (index === 0){
-            window.open(item.link)
+            if (item.link === ""){
+                props.updateModal({title: "Предупреждение", message: "Ссылки на данный товар нет"})
+            }else{
+                window.open(item.link)
+            }
         }
     }
     const headers = [
@@ -51,4 +57,8 @@ const Table = (props) => {
         </table>
     </div>
 }
-export default Table
+const mapStateToProps = (state) => {return state}
+const mapDispatchToProps = (dispatch) => {return {
+    "updateModal": (data) => {dispatch(updateModal(data))}
+}}
+export default connect(mapStateToProps, mapDispatchToProps)(Table)

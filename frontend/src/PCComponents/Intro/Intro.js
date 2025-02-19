@@ -7,10 +7,11 @@ import Examples from "./MiddlePlates/Examples/Examples";
 import MiddlePlates from "./MiddlePlates/MiddlePlates";
 import Footer from "../Footer/Footer";
 import back from "./img/back.png";
+import Exam from "./MiddlePlates/Exam/Exam";
 
 const Intro = (props) => {
     const [cur_small_cmp, setCurSmallCMP] = useState(0)
-    const classes = [".middle_plates", ".contacts", ".info",  ".examples"]
+    const classes = [".middle_plates", ".contacts", ".info",  ".examples", ".exam"]
 
     const setCmp = (value) => {
         if (cur_small_cmp !== value){
@@ -34,7 +35,8 @@ const Intro = (props) => {
         <MiddlePlates setCurSmallCMP={setCmp} setCurBigCMP={props.changeCMP}/>,
         <Contacts/>,
         <Info/>,
-        <Examples/>
+        <Examples/>,
+        <Exam/>
     ]
 
     return <div className="intro">

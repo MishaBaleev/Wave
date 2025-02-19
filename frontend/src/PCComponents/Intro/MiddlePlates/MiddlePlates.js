@@ -59,6 +59,7 @@ const MiddlePlates = (props) => {
             {mini_buttons.map((item, index) => {
                 return <button key={index} onClick={() => {changeCMP(index)}}>{item}</button>
             })}
+            <button className="big" onClick={() => {changeCMP(4)}}>Итоговое тестирование</button>
         </div>
     </div>
 }

@@ -101,13 +101,14 @@
         }
     }
     .multi_plate{
-        width: 95.5%;
+        width: calc(95.5% - 30px);
         height: 90%;
+        padding: 0 15px;
         grid-column: span 2;
         background-color: #6F85AF;
         border-radius: 6px;
         @include flexContainerCenterWrap();
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         align-content: space-evenly;
         button{
@@ -121,6 +122,9 @@
             &:hover{
                 cursor: pointer;
                 background-color: #4B7DB0;
+            }
+            &.big{
+                width: 100%;
             }
         }
     }

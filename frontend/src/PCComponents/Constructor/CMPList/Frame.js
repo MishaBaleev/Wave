@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import coins from "./img/coins.png";
 import filter_icon from "../../Demonstration/Hardware/img/filter.png";
 import Filter from "../../Demonstration/Hardware/Filter/Filter";
+import pattern from "./img/pattern.png";
 
 const Frame = (props) => {
     //state
@@ -100,7 +101,10 @@ const Frame = (props) => {
                         })}
                     </ul>
                     <div className="item_img">
-                        <img src={require(`./img/cmp_cards/${item.name.replace("/", "_")}.png`)} alt="Element"/>
+                        {item.img_link===""?
+                            <img src={pattern} alt="pattern"/>:
+                            <img src={require(`./img/cmp_cards/${item.name.replace("/", "_")}.png`)} alt="Element"/>
+                        }
                         <div className="gradient"/>
                     </div>
                 </li>

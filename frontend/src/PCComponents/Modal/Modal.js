@@ -1,8 +1,17 @@
 import "./Modal.scss";
 import { connect } from "react-redux";
 import { updateModal } from "../../AppSlice";
+import { useState, useEffect } from "react";
 
 const Modal = (props) => {
+    //state
+    const [timer, setTimer] = useState(null)
+    //handlers
+    useEffect(() => {
+        clearInterval(timer)
+        setTimer(setTimeout(() => {props.updateModal({title: "", message: ""})}, 10000))
+    }, [props.app.modal])
+    
     return <div className="modal">
         <button className="close" onClick={() => {props.updateModal({title:"", message:""})}}/>
         <div className="title"><p>{props.app.modal.title}</p></div>
