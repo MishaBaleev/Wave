@@ -9,7 +9,7 @@ const App = (props) => {
   const is_pc = (user_agent.search("iphone") > -1)?false:((user_agent.search("android") > -1)?false:true)
   
   return (
-    <div className="App">
+    <div className={"App " + (is_pc===true?"pc_comp":"mob_comp")}>
       {is_pc===true?
         <PC/>:<Mob/>
       }

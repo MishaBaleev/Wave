@@ -3,6 +3,14 @@ body{
   padding: 0
 }
 .App{
-  width: 100%;
+  width: 100dvw;
   height: 100dvh;
+  min-width: 1200px;
+  min-height: 850px;
+  overflow: hidden;
+  position: relative;
+  &.mob_comp{
+    min-width: auto;
+    min-height: auto;
+  }
 }

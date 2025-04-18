@@ -20,6 +20,7 @@
     "sass": "^1.77.8",
     "swiper": "^11.1.12",
     "three": "^0.169.0",
+    "typescript": "^5.7.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
